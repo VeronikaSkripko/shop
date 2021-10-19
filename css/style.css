@@ -66,7 +66,6 @@
 }
 
 .brand__title {
-	font-family: Lato;
 	font-size: 48px;
 	font-weight: 900;
 	line-height: 58px;
@@ -85,14 +84,12 @@
 
 .brand__sub-title {
 	display: flex;
-	font-family: Lato;
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 38px;
 }
 
 .brand__sub-title-pink {
-	font-family: Lato;
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 38px;
@@ -132,9 +129,7 @@
 
 .product__text {
 	text-align: center;
-	font-size: 14px;
 	font-weight: 400;
-	line-height: 17px;
 	color: #9F9F9F;
 }
 
@@ -163,9 +158,7 @@
 	transform: translate(-50%, -50%);
 	width: 138px;
 	height: 43px;
-	font-size: 14px;
 	font-weight: 400;
-	line-height: 17px;
 	text-align: center;
 	padding: 0 0 0 35px;
 	color: white;
@@ -203,9 +196,6 @@
 
 .products__desc {
 	width: 300px;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 17px;
 	text-align: left;
 	padding-bottom: 18px;
 }
@@ -273,10 +263,6 @@
 
 .icons__text {
 	max-width: 360px;
-	font-family: Lato;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 17px;
 	text-align: center;
 	color: #FBFBFB;
 	padding-bottom: 104px;
@@ -284,7 +270,7 @@
 
 .footer {
 	background-image: url(../img/footer-background.png);
-
+	background-size: cover;
 }
 
 .footer__list {
@@ -327,7 +313,6 @@
 	text-align: center;
 	color: #222224;
 	text-transform: uppercase;
-	font-weight: bold;
 }
 
 .footer__subtitle {
@@ -358,10 +343,7 @@
 	box-sizing: border-box;
 	height: 49px;
 	border-radius: 0 20px 20px 0;
-	font-family: Lato;
-	font-size: 14px;
 	font-weight: 400;
-	line-height: 17px;
 	text-align: center;
 	padding: 7px 7px 6px 8px;
 	margin-left: -3px;
@@ -432,11 +414,10 @@
 }
 
 .page-name {
-	padding: 59px 0 60px 0px;
+	padding: 59px 0 60px 0;
 }
 
 .page-name__title {
-	font-family: Lato;
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 29px;
@@ -452,13 +433,12 @@
 
 .box__form-title {
 	font-size: 16px;
-	font-weight: 300;
 	line-height: 19px;
 	text-align: left;
 	padding-bottom: 20px;
 }
 
-.box__form__visually-hidden {
+.box__form-visually-hidden {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
@@ -492,8 +472,8 @@
 	cursor: pointer;
 }
 
-.box__form-radio-f {
-	margin-left: 20px;
+.box__form-radio:not(:last-child) {
+	margin-right: 20px;
 }
 
 input[type="radio"] {
@@ -504,7 +484,6 @@ input[type="radio"] {
 .box__form-text {
 	font-size: 13px;
 	font-style: normal;
-	font-weight: 300;
 	line-height: 16px;
 	color: #B1B1B1;
 	margin-bottom: 39px;
@@ -517,9 +496,7 @@ input[type="radio"] {
 	border: none;
 	background-color: var(--dark-pink);
 	color: white;
-	font-size: 14px;
 	font-weight: 400;
-	line-height: 17px;
 	text-transform: uppercase;
 	margin-bottom: 96px;
 }
@@ -542,14 +519,12 @@ input[type="radio"] {
 .box__content-title {
 	text-transform: uppercase;
 	font-size: 24px;
-	font-weight: 300;
 	line-height: 29px;
 	margin-bottom: 22px;
 }
 
 .box__content-subtitle {
 	font-size: 24px;
-	font-weight: 300;
 	line-height: 29px;
 	margin-bottom: 21px;
 }
@@ -566,7 +541,6 @@ input[type="radio"] {
 
 .box__content-text {
 	font-size: 24px;
-	font-weight: 300;
 	line-height: 29px;
 	margin-bottom: 16px;
 }

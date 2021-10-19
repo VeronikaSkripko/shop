@@ -59,30 +59,32 @@
 						<legend class="box__form-title">Your name</legend>
 						<label>
 							<input class="box__form-field" type="text" name="name" placeholder="First Name"><br>
-							<span class="box__form__visually-hidden">Name</span>
+							<span class="box__form-visually-hidden">Name</span>
 						</label>
 						<label>
 							<input class="box__form-field" type="text" name="surname" placeholder="Last Name"><br>
-							<span class="box__form__visually-hidden">Surname</span>
+							<span class="box__form-visually-hidden">Surname</span>
 						</label>
-						<label>
-							<input class="box__form-radio-m" type="radio" name="gender">Male
-							<span class="box__form__visually-hidden">GenderM</span>
-						</label>
-						<label>
-							<input class="box__form-radio-f" type="radio" name="gender">Female<br>
-							<span class="box__form__visually-hidden">GenderF</span>
-						</label>
+						<div class="radiobutton">
+							<label class="box__form-radio">
+								<input type="radio" name="gender">Male
+								<span class="box__form-visually-hidden">GenderM</span>
+							</label>
+							<label class="box__form-radio">
+								<input type="radio" name="gender">Female<br>
+								<span class="box__form-visually-hidden">GenderF</span>
+							</label>
+						</div>
 					</fieldset>
 					<fieldset>
 						<legend class="box__form-title">Login details</legend>
 						<label>
 							<input class="box__form-field" type="email" required name="email" placeholder="Email"><br>
-							<span class="box__form__visually-hidden">Email</span>
+							<span class="box__form-visually-hidden">Email</span>
 						</label>
 						<label>
 							<input class="box__form-field" type="password" name="password" placeholder="Password"><br>
-							<span class="box__form__visually-hidden">Password</span>
+							<span class="box__form-visually-hidden">Password</span>
 						</label>
 						<p class="box__form-text">Please use 8 or more characters, with at least 1 number and a mixture
 							of uppercase and lowercase letters</p>
