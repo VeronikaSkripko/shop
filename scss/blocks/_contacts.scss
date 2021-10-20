@@ -1,0 +1,55 @@
+.contacts {
+	background-color: #222224;
+	display: flex;
+	justify-content: space-around;
+	flex-grow: 1;
+}
+
+.contacts__rights {
+	color: #FBFBFB;
+	@include font(16px, 19px);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.contacts__list {
+	display: flex;
+}
+
+.contacts__block {
+	height: 32px;
+	width: 31px;
+	border: none;
+	background-color: white;
+	position: relative;
+	margin: 24px 7px 23px 0;
+}
+
+.contacts__img {
+	position: absolute;
+}
+
+.facebook {
+	padding: 8px 12px 11px 11px;
+	fill: black;
+}
+
+.insta {
+	padding: 9px 8px 8px 8px;
+	fill: black;
+}
+
+.pinterest {
+	padding: 8px 8px 9px 10px;
+	fill: black;
+}
+
+.twitter {
+	padding: 9px 9px 9px 7px;
+	fill: black;
+}
+
+.socials:hover {
+	fill: white;
+	background-color: $dark-pink;
+}
