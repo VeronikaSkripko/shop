@@ -29,27 +29,31 @@
 	position: absolute;
 }
 
-.facebook {
-	padding: 8px 12px 11px 11px;
+.contacts__link {
 	fill: black;
+
+	&-facebook {
+		padding: 8px 12px 11px 11px;
+	}
+
+	&-insta {
+		padding: 9px 8px 8px 8px;
+	}
+
+	&-pinterest {
+		padding: 8px 8px 9px 10px;
+	}
+
+	&-twitter {
+		padding: 9px 9px 9px 7px;
+	}
+
 }
 
-.insta {
-	padding: 9px 8px 8px 8px;
-	fill: black;
-}
-
-.pinterest {
-	padding: 8px 8px 9px 10px;
-	fill: black;
-}
-
-.twitter {
-	padding: 9px 9px 9px 7px;
-	fill: black;
-}
-
-.socials:hover {
+.contacts__link-facebook:hover,
+.contacts__link-insta:hover,
+.contacts__link-pinterest:hover,
+.contacts__link-twitter:hover {
 	fill: white;
 	background-color: $dark-pink;
 }

@@ -7,13 +7,6 @@
 		padding-right: 30px;
 	}
 
-	.icons__img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 103px;
-	}
-
 	.icons__title {
 		@include font(20px, 24px);
 		text-align: center;
@@ -27,16 +20,24 @@
 		color: #FBFBFB;
 		padding-bottom: 104px;
 	}
+
 }
 
-.truck-img {
-	padding-bottom: 28px;
-}
+.icons__img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 103px;
 
-.sale-img {
-	padding-bottom: 19px;
-}
+	&-truck-img {
+		padding-bottom: 28px;
+	}
 
-.crown-img {
-	padding-bottom: 25px;
+	&-sale-img {
+		padding-bottom: 19px;
+	}
+
+	&-crown-img {
+		padding-bottom: 25px;
+	}
 }

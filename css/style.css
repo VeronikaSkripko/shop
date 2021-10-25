@@ -387,12 +387,6 @@ table {
 .icons__list .icons__items {
   padding-right: 30px;
 }
-.icons__list .icons__img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 103px;
-}
 .icons__list .icons__title {
   font-size: 20px;
   line-height: 24px;
@@ -409,15 +403,19 @@ table {
   padding-bottom: 104px;
 }
 
-.truck-img {
+.icons__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 103px;
+}
+.icons__img-truck-img {
   padding-bottom: 28px;
 }
-
-.sale-img {
+.icons__img-sale-img {
   padding-bottom: 19px;
 }
-
-.crown-img {
+.icons__img-crown-img {
   padding-bottom: 25px;
 }
 
@@ -531,27 +529,26 @@ table {
   position: absolute;
 }
 
-.facebook {
+.contacts__link {
+  fill: black;
+}
+.contacts__link-facebook {
   padding: 8px 12px 11px 11px;
-  fill: black;
 }
-
-.insta {
+.contacts__link-insta {
   padding: 9px 8px 8px 8px;
-  fill: black;
 }
-
-.pinterest {
+.contacts__link-pinterest {
   padding: 8px 8px 9px 10px;
-  fill: black;
 }
-
-.twitter {
+.contacts__link-twitter {
   padding: 9px 9px 9px 7px;
-  fill: black;
 }
 
-.socials:hover {
+.contacts__link-facebook:hover,
+.contacts__link-insta:hover,
+.contacts__link-pinterest:hover,
+.contacts__link-twitter:hover {
   fill: white;
   background-color: #F16D7F;
 }
@@ -577,4 +574,138 @@ table {
   font-style: normal;
   color: #6F6E6E;
   margin-left: 20px;
+}
+
+.page-name__background-color {
+  background-color: #F1E4E6;
+}
+
+.page-name {
+  padding: 59px 0 60px 0;
+}
+.page-name__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: var(--dark-pink);
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+.box__form-title {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  padding-bottom: 20px;
+}
+.box__form-visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.box__form-field {
+  height: 45px;
+  width: 360px;
+  margin-bottom: 21px;
+  border: 1px solid #A4A4A4;
+  padding-left: 16px;
+}
+
+[type=text]:hover,
+[type=email]:hover,
+[type=password]:hover,
+[type=radio]:hover,
+[type=text]:focus,
+[type=email]:focus,
+[type=password]:focus,
+[type=radio]:focus {
+  outline: 1px solid #F16D7F;
+  background: white;
+  cursor: pointer;
+}
+
+.box__form-radio:not(:last-child) {
+  margin-right: 20px;
+}
+
+input[type=radio] {
+  margin-right: 10px;
+  margin-bottom: 35px;
+}
+
+.box__form-text {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #B1B1B1;
+  margin-bottom: 39px;
+  width: 359px;
+}
+
+.box__form-button {
+  height: 50px;
+  width: 167px;
+  border: none;
+  background-color: #F16D7F;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 96px;
+}
+
+.box__form-button:hover,
+.box__form-button:focus {
+  opacity: 0.5;
+  cursor: pointer;
+  outline: none;
+}
+
+.box__form-button:active {
+  opacity: 0.7;
+}
+
+.box__content {
+  width: 652px;
+}
+.box__content-title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.box__content-subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 21px;
+}
+.box__content-text {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 16px;
+}
+
+.box__content-block {
+  display: flex;
+  align-items: baseline;
+}
+
+.box__content-img {
+  display: block;
+  margin-right: 23px;
 }/*# sourceMappingURL=style.css.map */
