@@ -1,0 +1,54 @@
+.header {
+	background-color: $black;
+
+
+	.header__wrp {
+		display: flex;
+		justify-content: space-between;
+		min-height: 75px;
+		align-items: center;
+		position: relative;
+	}
+
+	.header__logo {
+		margin: 0 41px 0 0;
+	}
+
+	.header__link {
+		margin: 0 0 0 31px;
+	}
+
+	.header__menu-button {
+		border: none;
+		background-color: transparent;
+	}
+
+	.controls {
+		fill: #fff;
+	}
+
+	.controls:hover {
+		fill: $dark-pink;
+	}
+
+	.header__nav {
+		position: absolute;
+		background-color: #fff;
+		padding-left: 34px;
+		right: 0;
+		bottom: -505px;
+		display: none;
+		z-index: 2;
+
+		&--show {
+			display: block
+		}
+	}
+}
+
+.header__nav-title {
+	@include font(14px, 17px, 700);
+	text-transform: uppercase;
+	margin-top: 37px;
+	padding-bottom: 24px;
+}

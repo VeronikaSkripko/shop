@@ -1,0 +1,12 @@
+.sales__list {
+	@include flex-center;
+	flex-wrap: wrap;
+}
+
+.sales__img {
+	padding: 30px;
+}
+
+.img-accesories {
+	align-self: flex-end;
+}
