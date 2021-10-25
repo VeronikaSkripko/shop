@@ -1,0 +1,16 @@
+.menu-item__title {
+	@include font(14px, 17px);
+	text-transform: uppercase;
+	color: $dark-pink;
+}
+
+.menu-item__sub-list {
+	margin-bottom: 40px;
+	margin-right: 43px;
+}
+
+.menu-item__sub-item {
+	@include font(14px, 17px);
+	color: #6F6E6E;
+	margin-left: 20px;
+}

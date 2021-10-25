@@ -1,0 +1,43 @@
+.icons__list {
+	@include flex-center;
+	flex-grow: 1;
+	background-color: $black;
+
+	.icons__items {
+		padding-right: 30px;
+	}
+
+	.icons__title {
+		@include font(20px, 24px);
+		text-align: center;
+		color: #FBFBFB;
+		padding-bottom: 16px;
+	}
+
+	.icons__text {
+		max-width: 360px;
+		text-align: center;
+		color: #FBFBFB;
+		padding-bottom: 104px;
+	}
+
+}
+
+.icons__img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 103px;
+
+	&-truck-img {
+		padding-bottom: 28px;
+	}
+
+	&-sale-img {
+		padding-bottom: 19px;
+	}
+
+	&-crown-img {
+		padding-bottom: 25px;
+	}
+}

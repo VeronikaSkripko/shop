@@ -1,0 +1,116 @@
+.box {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 64px;
+
+	&__form-title {
+		@include font(16px, 19px);
+		text-align: left;
+		padding-bottom: 20px;
+	}
+
+	&__form-visually-hidden {
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		border: 0;
+		padding: 0;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		margin: -1px;
+	}
+
+	&__form-field {
+		height: 45px;
+		width: 360px;
+		margin-bottom: 21px;
+		border: 1px solid #A4A4A4;
+		padding-left: 16px;
+	}
+}
+
+
+[type="text"]:hover,
+[type="email"]:hover,
+[type="password"]:hover,
+[type="radio"]:hover,
+[type="text"]:focus,
+[type="email"]:focus,
+[type="password"]:focus,
+[type="radio"]:focus {
+	outline: 1px solid $dark-pink;
+	background: white;
+	cursor: pointer;
+}
+
+.box__form-radio:not(:last-child) {
+	margin-right: 20px;
+}
+
+input[type="radio"] {
+	margin-right: 10px;
+	margin-bottom: 35px;
+}
+
+.box__form-text {
+	@include font(13px, 16px);
+	color: #B1B1B1;
+	margin-bottom: 39px;
+	width: 359px;
+}
+
+.box__form-button {
+	height: 50px;
+	width: 167px;
+	border: none;
+	background-color: $dark-pink;
+	color: white;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 96px;
+}
+
+.box__form-button:hover,
+.box__form-button:focus {
+	opacity: 0.5;
+	cursor: pointer;
+	outline: none;
+}
+
+.box__form-button:active {
+	opacity: 0.7;
+}
+
+.box__content {
+	width: 652px;
+
+	&-title {
+		@include font(24px, 29px);
+		text-transform: uppercase;
+		margin-bottom: 22px;
+	}
+
+	&-subtitle {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 21px;
+	}
+
+	&-text {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 16px;
+	}
+}
+
+.box__content-block {
+	display: flex;
+	align-items: baseline;
+}
+
+.box__content-img {
+	display: block;
+	margin-right: 23px;
+}
