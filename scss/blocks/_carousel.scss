@@ -1,0 +1,23 @@
+.main-carousel {
+	background-color: #F7F7F7;
+}
+
+.carousel-control-next:hover,
+.carousel-control-next:focus,
+.carousel-control-prev:hover,
+.carousel-control-prev:focus {
+	color: #2A2A2A;
+	text-decoration: none;
+	outline: 0;
+	opacity: 0.5;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	background-color: #2A2A2A;
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+	background-color: $dark-pink;
+}

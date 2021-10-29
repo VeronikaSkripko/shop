@@ -3,10 +3,39 @@
 	margin-bottom: 65px;
 
 	&__wrp {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
 		background-color: $light-pink;
 		flex-grow: 1;
-		padding: 0 0 0 92px;
-		@include flex-center;
+
+		@include tablet {
+			padding: 0 0 0 68px;
+		}
+
+		@include mobile {
+			min-height: 363px;
+			padding: 0 0 0 83px;
+		}
+	}
+
+	&__wrp-text {
+		border-left: 12px solid $dark-pink;
+		margin: 0 35px 0 0;
+		padding: 0 0 0 16px;
+	}
+
+	&__img {
+		width: 50%;
+
+		@include tablet {
+			height: auto;
+		}
+
+		@include mobile {
+			display: none;
+		}
 	}
 
 	&__title {
@@ -14,24 +43,39 @@
 		text-transform: uppercase;
 		position: relative;
 
-		&::before {
-			height: 92px;
-			width: 12px;
-			background-color: $dark-pink;
-			content: " ";
-			position: absolute;
-			left: -32px;
+		@include tablet {
+			@include font(44px, 53px, 900);
+		}
+
+		@include mobile {
+			@include font(38px, 46px, 900);
 		}
 	}
 
 	&__sub-title {
-		display: flex;
+
+		text-transform: uppercase;
 		@include font(32px, 38px, 700);
+
+		@include tablet {
+			@include font(29px, 24px, 700);
+		}
+
+		@include mobile {
+			@include font(38px, 46px, 900);
+		}
 	}
 
 	&__sub-title-pink {
 		@include font(32px, 38px, 700);
 		color: #F16D7F;
-		margin-left: 7px;
+
+		@include tablet {
+			@include font(29px, 24px, 700);
+		}
+
+		@include mobile {
+			@include font(38px, 46px, 900);
+		}
 	}
 }

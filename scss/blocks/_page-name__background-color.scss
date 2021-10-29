@@ -4,12 +4,37 @@
 
 .page-name {
 	padding: 59px 0 60px 0;
+	display: flex;
+	justify-content: space-between;
 
 	&__title {
 		font-size: 24px;
 		font-weight: 400;
 		line-height: 29px;
 		text-transform: uppercase;
-		color: var(--dark-pink);
+		color: $dark-pink;
 	}
+
+	@include mobile {
+		.page-name__title {
+			text-align: center;
+		}
+	}
+}
+
+.page-name__subtitle {
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 17px;
+	color: #636363;
+	text-transform: uppercase;
+}
+
+.page-name__text {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 17px;
+	color: $dark-pink;
+	text-transform: uppercase;
 }

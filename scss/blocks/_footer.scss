@@ -7,12 +7,18 @@
 	display: flex;
 	justify-content: space-around;
 	flex-grow: 1;
+	flex-wrap: wrap;
 
 	.footer__img {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 86px;
+	}
+
+	@include tablet {
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
@@ -23,14 +29,26 @@
 	height: 99px;
 	margin-top: 20px;
 	margin-bottom: 126px;
+
+	@include tablet {
+		margin-bottom: 0;
+	}
+}
+
+.footer__text-subtext {
+	@include font (20px, 24px, 400, italic);
 }
 
 .footer__title {
 	margin-top: 150px;
-	@include font(24px, 40px);
+	@include font(24px, 40px, 700);
 	text-align: center;
 	color: #222224;
 	text-transform: uppercase;
+
+	@include tablet {
+		margin-top: 59px;
+	}
 }
 
 .footer__subtitle {
@@ -50,6 +68,11 @@
 	box-sizing: border-box;
 	padding-left: 22px;
 	border: none;
+	font-family: inherit;
+
+	@include tablet {
+		margin-bottom: 109px;
+	}
 }
 
 .footer__btn {
