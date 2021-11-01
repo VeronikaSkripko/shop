@@ -7,6 +7,7 @@
 	display: flex;
 	justify-content: space-around;
 	flex-grow: 1;
+	flex-wrap: wrap;
 
 	.footer__img {
 		display: block;
@@ -14,23 +15,39 @@
 		margin-right: auto;
 		margin-top: 86px;
 	}
+
+	@include tablet {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .footer__text {
 	@include font(20px);
 	text-align: center;
-	width: 359px;
-	height: 99px;
-	margin-top: 20px;
-	margin-bottom: 126px;
+	width: 85%;
+	min-height: 99px;
+	margin: 20px auto 126px auto;
+
+	@include tablet {
+		margin-bottom: 0;
+	}
+}
+
+.footer__text-subtext {
+	@include font (20px, 24px, 400, italic);
 }
 
 .footer__title {
 	margin-top: 150px;
-	@include font(24px, 40px);
+	@include font(24px, 40px, 700);
 	text-align: center;
 	color: #222224;
 	text-transform: uppercase;
+
+	@include tablet {
+		margin-top: 59px;
+	}
 }
 
 .footer__subtitle {
@@ -44,12 +61,22 @@
 
 .footer__field {
 	background-color: #E1E1E1;
-	height: 49px;
+	min-height: 49px;
 	width: 256px;
 	border-radius: 20px 0 0 20px;
 	box-sizing: border-box;
 	padding-left: 22px;
 	border: none;
+	font-family: inherit;
+
+	@include tablet {
+		margin-bottom: 109px;
+	}
+
+	@include mobile {
+		margin-left: 10px;
+		width: 170px;
+	}
 }
 
 .footer__btn {
@@ -57,7 +84,7 @@
 	color: #FFFFFF;
 	border: none;
 	box-sizing: border-box;
-	height: 49px;
+	min-height: 49px;
 	border-radius: 0 20px 20px 0;
 	font-weight: 400;
 	text-align: center;

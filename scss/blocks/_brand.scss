@@ -1,37 +1,78 @@
 .brand {
 	display: flex;
 	margin-bottom: 65px;
+}
 
-	&__wrp {
-		background-color: $light-pink;
-		flex-grow: 1;
-		padding: 0 0 0 92px;
-		@include flex-center;
+.brand__wrp {
+	min-height: 363px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: $light-pink;
+	flex-grow: 1;
+
+	@include tablet {
+		padding: 0 0 0 68px;
+		box-sizing: border-box;
+	}
+}
+
+.brand__wrp-text {
+	border-left: 12px solid $dark-pink;
+	padding: 0 0 0 16px;
+	box-sizing: border-box;
+}
+
+.brand__img {
+	width: 50%;
+
+	@include tablet {
+		height: auto;
 	}
 
-	&__title {
-		@include font(48px, 58px, 900);
-		text-transform: uppercase;
-		position: relative;
+	@include mobile {
+		display: none;
+	}
+}
 
-		&::before {
-			height: 92px;
-			width: 12px;
-			background-color: $dark-pink;
-			content: " ";
-			position: absolute;
-			left: -32px;
-		}
+.brand__title {
+	@include font(48px, 58px, 900);
+	text-transform: uppercase;
+	position: relative;
+
+	@include tablet {
+		@include font(44px, 53px, 900);
 	}
 
-	&__sub-title {
-		display: flex;
-		@include font(32px, 38px, 700);
+	@include mobile {
+		@include font(35px, 46px, 900);
+	}
+}
+
+.brand__sub-title {
+
+	text-transform: uppercase;
+	@include font(32px, 38px, 700);
+
+	@include tablet {
+		@include font(29px, 24px, 700);
 	}
 
-	&__sub-title-pink {
-		@include font(32px, 38px, 700);
-		color: #F16D7F;
-		margin-left: 7px;
+	@include mobile {
+		@include font(33px, 46px, 900);
+	}
+}
+
+.brand__sub-title-pink {
+	@include font(32px, 38px, 700);
+	color: #F16D7F;
+
+	@include tablet {
+		@include font(29px, 40px, 700);
+	}
+
+	@include mobile {
+		@include font(33px, 46px, 900);
 	}
 }

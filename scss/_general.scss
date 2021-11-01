@@ -1,24 +1,57 @@
-.page {
-	font-family: $font-lato;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 17px;
-}
+ @font-face {
+ 	font-family: 'Lato';
+ 	font-style: normal;
+ 	font-weight: 700;
+ 	src: url('../fonts/lato-bold.woff2') format("woff2"),
+ 		url('../fonts/lato-bold.woff') format("woff");
+ }
 
-.container {
-	width: 1140px;
-	margin: 0 auto;
-}
+ @font-face {
+ 	font-family: 'Lato';
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	src: url('../fonts/lato-regular.woff2') format("woff2"),
+ 		url('../fonts/lato-regular.woff') format("woff");
+ }
 
-.visually-hidden {
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	margin: -1px;
-}
+ @font-face {
+ 	font-family: 'Lato';
+ 	font-style: italic;
+ 	font-weight: 400;
+ 	src: url('../fonts/lato-italic.woff2') format("woff2"),
+ 		url('../fonts/lato-italic.woff') format("woff");
+ }
+
+
+ @font-face {
+ 	font-family: 'Lato';
+ 	font-style: normal;
+ 	font-weight: 300;
+ 	src: url('../fonts/lato-light.woff2') format("woff2"),
+ 		url('../fonts/lato-light.woff') format("woff");
+ }
+
+ .page {
+ 	font-family: $font-lato;
+ 	font-size: 14px;
+ 	font-weight: 300;
+ 	line-height: 17px;
+ }
+
+ .container {
+ 	max-width: 1140px;
+ 	margin: 0 auto;
+ }
+
+ .visually-hidden {
+ 	position: absolute;
+ 	white-space: nowrap;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+ 	border: 0;
+ 	padding: 0;
+ 	clip: rect(0 0 0 0);
+ 	clip-path: inset(50%);
+ 	margin: -1px;
+ }

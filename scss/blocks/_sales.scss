@@ -1,12 +1,62 @@
 .sales__list {
-	@include flex-center;
+	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
 }
 
-.sales__img {
-	padding: 30px;
+.sales__item {
+	flex-basis: 360px;
+	height: 260px;
 }
 
-.img-accesories {
-	align-self: flex-end;
+
+.sales__item-women,
+.sales__item-men,
+.sales__item-kids,
+.sales__item-accesories {
+	text-decoration: none;
+}
+
+.sales__item:first-child {
+	background-image: url(../img/dark.png), url(../img/for_women.png);
+	background-size: cover;
+}
+
+.sales__item:nth-child(2) {
+	background-image: url(../img/dark.png), url(../img/for_men.png);
+	background-size: cover;
+}
+
+.sales__item:nth-child(3) {
+	background-image: url(../img/dark.png), url(../img/for-kids.png);
+	background-size: cover;
+}
+
+.sales__item:last-child {
+	flex-basis: 1140px;
+	height: 180px;
+	background-image: url(../img/dark.png), url(../img/accesories.png);
+	background-size: cover;
+}
+
+.sales__item-proposal {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: center;
+	color: white;
+	padding-top: 105px;
+}
+
+#sales__item-lux {
+	padding-top: 65px;
+}
+
+.sales__item-for {
+	font-size: 18px;
+	font-weight: 900;
+	line-height: 22px;
+	text-align: center;
+	color: $dark-pink;
 }

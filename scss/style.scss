@@ -4,6 +4,8 @@
 
 @import './mixins.scss';
 
+@import './animation';
+
 @import './general';
 
 @import './blocks/header';
@@ -25,3 +27,13 @@
 @import './blocks/page-name__background-color';
 
 @import './blocks/box';
+
+@import './blocks/carousel';
+
+@import './blocks/margin-left-30';
+
+@import './blocks/main-box';
+
+@import './blocks/img';
+
+@import './blocks/card-gallery';
