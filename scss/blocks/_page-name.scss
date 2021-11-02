@@ -5,7 +5,12 @@
 .page-name__background-color {
 	padding: 59px 0 60px 0;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+
+	@include mobile {
+		justify-content: center;
+	}
 }
 
 .page-name__title {
@@ -17,6 +22,7 @@
 
 	@include mobile {
 		text-align: center;
+		margin-bottom: 32px;
 	}
 }
 

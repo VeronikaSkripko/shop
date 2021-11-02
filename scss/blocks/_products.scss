@@ -21,7 +21,7 @@
 	margin: 0 auto;
 }
 
-.products__list-size {
+.products__item {
 	max-width: 360px;
 }
 
@@ -67,10 +67,14 @@
 }
 
 .products__img {
-	height: 100%;
 	width: 100%;
 	object-fit: contain;
 }
+
+.products__img:hover {
+	outline: 2px solid $dark-pink;
+}
+
 
 .products__caption {
 	padding: 25px 0 12px 1%;

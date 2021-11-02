@@ -5,8 +5,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Registration</title>
-	<link rel="stylesheet" href="./css/all.css">
+	<title>Product</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/bootstrap.css">
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
@@ -87,105 +90,91 @@
 		<div class="page-name">
 			<div class="container">
 				<section class="page-name__background-color">
-					<h2 class="page-name__title">Registration</h2>
+					<h2 class="page-name__title">New arrivals</h2>
+					<h2 class="page-name__subtitle">home / men / <span class="page-name__text">new arrivals</span> </h2>
 				</section>
 			</div>
 		</div>
 	</section>
 	<main>
+		<section class="main-carousel">
+			<h2 class="visually-hidden">Carousel</h2>
+			<div class="container">
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="./img/product-girl.jpg" class="d-block w-50 ml-30 carousel-mobile" alt="girl">
+						</div>
+						<div class="carousel-item">
+							<img src="./img/product-girl.jpg" class="d-block w-50 ml-30 carousel-mobile" alt="girl">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</section>
 		<div class="container">
-			<section class="box">
-				<h2 class="visually-hidden">Form</h2>
-				<form class="box__form" action="#">
-					<fieldset class="set">
-						<legend class="box__form-title">Your name</legend>
-						<label>
-							<input class="box__form-field" type="text" name="name" placeholder="First Name"><br>
-							<span class="visually-hidden">Name</span>
-						</label>
-						<label>
-							<input class="box__form-field" type="text" name="surname" placeholder="Last Name"><br>
-							<span class="visually-hidden">Surname</span>
-						</label>
-						<div class="radiobutton">
-							<label class="box__form-radio">
-								<input type="radio" name="gender">Male
-								<span class="visually-hidden">GenderM</span>
-							</label>
-							<label class="box__form-radio">
-								<input type="radio" name="gender">Female<br>
-								<span class="visually-hidden">GenderF</span>
-							</label>
+			<section class="main-box">
+				<h2 class="visually-hidden">Content</h2>
+				<h3 class="main-box__title">women collection</h3>
+				<img class="main-box__pink-line" src="./img/pink-line.png" alt="line">
+				<h4 class="main-box__subtitle">moschino cheap and chic</h4>
+				<p class="main-box__text"> Compellingly actualize fully researched processes before proactive
+					outsourcing. Progressively
+					syndicate collaborative architectures before cutting-edge services. Completely visualize
+					parallel core competencies rather than exceptional portals.</p>
+				<p class="main-box__price">$561</p>
+				<img class="main-box__line" src="./img/long-line.svg" alt="line">
+				<div class="main-box__list">
+					<div class="row centered">
+						<div class="col-4 centered">CHOOSE COLOR <img class="centered__mark" src="./img/table-mark.svg"
+								alt="mark">
 						</div>
-					</fieldset>
-					<fieldset>
-						<legend class="box__form-title">Login details</legend>
-						<label>
-							<input class="box__form-field" type="email" required name="email" placeholder="Email"><br>
-							<span class="visually-hidden">Email</span>
-						</label>
-						<label>
-							<input class="box__form-field" type="password" name="password" placeholder="Password"><br>
-							<span class="visually-hidden">Password</span>
-						</label>
-						<p class="box__form-text">Please use 8 or more characters, with at least 1 number and a mixture
-							of uppercase and lowercase letters</p>
-						<div class="box__button-container">
-							<button class="box__form-button" type="submit">Join now <i
-									class="box__button-arrow fas fa-arrow-right"></i></button>
-
-						</div>
-					</fieldset>
-				</form> -->
-				<div class="box__content">
-					<h2 class="box__content-title">loyalty has its perks</h2>
-					<p class="box__content-subtitle">Get in on the loyalty program where you can earn points and unlock
-						serious perks. Starting with
-						these as soon as you join:</p>
-					<div class="box__content-block">
-						<svg class="box__content-img" width="20" height="16" viewBox="0 0 20 16" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
-								fill="black" />
-						</svg>
-						<p class="box__content-text">15% off welcome offer</p>
+						<div class="col-4 centered">CHOOSE SIZE <img class="centered__mark" src="./img/table-mark.svg"
+								alt="mark"></div>
+						<div class="col-4 centered">QUANTITY <img class="centered__mark" src="./img/table-mark.svg"
+								alt="mark"></div>
 					</div>
-					<div class="box__content-block">
-						<svg class="box__content-img" width="20" height="16" viewBox="0 0 20 16" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
-								fill="black" />
-						</svg>
-						<p class="box__content-text">Free shipping, returns and exchanges on all orders</p>
+				</div>
+				<div class="main-box__button">
+					<button class="main-box__add-button"> Add to cart</button>
+				</div>
+			</section>
+			<section class="card-gallery">
+				<h2 class="visually-hidden">Goods</h2>
+				<div class="row">
+					<div class="col-4 card-gallery__col-4 card-gallery_card-color ">
+						<img class="products__img" src="./img/product1.jpg" alt="product1">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring, Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
 					</div>
-					<div class="box__content-block">
-						<svg class="box__content-img" width="20" height="16" viewBox="0 0 20 16" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
-								fill="black" />
-						</svg>
-						<p class="box__content-text">$10 off a purchase on your birthday </p>
+					<div class="col-4 card-gallery__col-4 card-gallery_card-color ">
+						<img class="products__img" src="./img/product2.jpg" alt="product2">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring, Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
 					</div>
-					<div class="box__content-block">
-						<svg class="box__content-img" width="20" height="16" viewBox="0 0 20 16" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
-								fill="black" />
-						</svg>
-						<p class="box__content-text">Early access to products</p>
-					</div>
-					<div class="box__content-block">
-						<svg class="box__content-img" width="20" height="16" viewBox="0 0 20 16" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
-								fill="black" />
-						</svg>
-						<p class="box__content-text">Exclusive offers & rewards</p>
+					<div class="col-4 card-gallery__col-4 card-gallery_card-color" id="card-gallery__last">
+						<img class="products__img" src="./img/product3.jpg" alt="product3">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring, Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
 					</div>
 				</div>
 			</section>
@@ -262,6 +251,7 @@
 			</ul>
 		</section>
 	</footer>
+	<script src="./js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
