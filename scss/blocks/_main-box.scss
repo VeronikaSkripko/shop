@@ -13,6 +13,11 @@
 	text-transform: uppercase;
 }
 
+.main-box__pink-line {
+	margin: 12px auto 0;
+	display: block;
+}
+
 .main-box__subtitle {
 	@include font (18px, 22px, 300);
 	text-align: center;
@@ -22,33 +27,40 @@
 
 .main-box__text {
 	@include font (14px, 17px, 300);
+	width: 70%;
 	text-align: center;
-	margin-top: 48px;
-
-	width: 555px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 48px auto 0;
 }
 
 .main-box__price {
 	@include font(24px, 29px, 300);
+	margin-top: 32px;
 	color: $dark-pink;
 	text-transform: uppercase;
-	margin-top: 32px;
 	text-align: center;
 }
 
+.main-box__line {
+	display: block;
+	margin: 65px auto 0;
+	width: 55%;
+}
+
 .main-box__list {
-	width: 423px;
-	margin: 137px auto 49px auto;
-	padding-left: 40px;
+	width: 67%;
+	margin: 65px auto 49px auto;
+}
+
+.main-box__button {
+	display: flex;
+	justify-content: center;
 }
 
 .main-box__add-button {
 	width: 138px;
 	min-height: 43px;
 	padding: 0 0 0 35px;
-	margin: 0 0 65px 482px;
+	margin: 0 0 65px 0;
 	color: $dark-pink;
 	background-color: white;
 	border: 1px solid $dark-pink;
@@ -57,8 +69,6 @@
 	background-position: 10px 6px;
 }
 
-.px-wide {
-	height: 724px;
-	width: 597px;
-	margin: 0 auto;
+.main-box__add-button:hover {
+	animation: heartbeat 1.5s ease-in-out infinite both;
 }

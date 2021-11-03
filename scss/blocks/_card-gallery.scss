@@ -6,3 +6,22 @@
 .card-gallery_card-color {
 	background-color: #F8F8F8;
 }
+
+.card-gallery__col-4 {
+	flex: 0 0 auto;
+	width: 33.33333333%;
+
+	@include tablet {
+		width: 50%;
+	}
+
+	@include mobile {
+		width: auto;
+	}
+}
+
+#card-gallery__last {
+	@include tablet {
+		display: none;
+	}
+}

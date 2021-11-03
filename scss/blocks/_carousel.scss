@@ -1,6 +1,10 @@
 .main-carousel {
 	background-color: #F7F7F7;
 	min-height: 777px;
+
+	@include mobile {
+		min-height: 497px;
+	}
 }
 
 .carousel-control-next:hover,
@@ -21,4 +25,11 @@
 .carousel-control-next-icon:hover,
 .carousel-control-prev-icon:hover {
 	background-color: $dark-pink;
+}
+
+.carousel-mobile {
+	@include mobile {
+		width: 100% !important;
+		margin-left: 0 !important;
+	}
 }
