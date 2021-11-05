@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Registration</title>
-	<link rel="stylesheet" href="./css/all.css">
+	<title>Catalog</title>
+	<link rel="stylesheet" href="./css/bootstrap.css">
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
@@ -87,107 +87,191 @@
 		<div class="page-name">
 			<div class="container">
 				<section class="page-name__background-color">
-					<h2 class="page-name__title">Registration</h2>
+					<h2 class="page-name__title">New arrivals</h2>
+					<h2 class="page-name__subtitle">home / men / <span class="page-name__text">new arrivals</span> </h2>
 				</section>
 			</div>
 		</div>
 	</section>
 	<main>
 		<div class="container">
-			<section class="box">
-				<h2 class="visually-hidden">Form</h2>
-				<form class="box__form" action="#">
-					<fieldset class="set">
-						<legend class="box__form-title">Your name</legend>
-						<label>
-							<input class="box__form-field" type="text" name="name" placeholder="First Name"><br>
-							<span class="visually-hidden">Name</span>
-						</label>
-						<label>
-							<input class="box__form-field" type="text" name="surname" placeholder="Last Name"><br>
-							<span class="visually-hidden">Surname</span>
-						</label>
-						<div class="radiobutton">
-							<label class="box__form-radio">
-								<input type="radio" name="gender">Male
-								<span class="visually-hidden">GenderM</span>
-							</label>
-							<label class="box__form-radio">
-								<input type="radio" name="gender">Female<br>
-								<span class="visually-hidden">GenderF</span>
-							</label>
+			<section class="filter">
+				<h2 class="visually-hidden">Filter</h2>
+				<div class="filter-container">
+					<p class="filter__sign">Filter</p>
+					<img class="filter__img" src="./img/filter.svg" alt="filter">
+				</div>
+				<div class="filter__drop-down">
+					<div class="row centered">
+						<div class="col-4 centered">
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle text-uppercase filter__drop-down-btn"
+									type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">
+									Trending now
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
 						</div>
-					</fieldset>
-					<fieldset>
-						<legend class="box__form-title">Login details</legend>
-						<label>
-							<input class="box__form-field" type="email" required name="email" placeholder="Email"><br>
-							<span class="visually-hidden">Email</span>
-						</label>
-						<label>
-							<input class="box__form-field" type="password" name="password" placeholder="Password"><br>
-							<span class="visually-hidden">Password</span>
-						</label>
-						<p class="box__form-text">Please use 8 or more characters, with at least 1 number and a mixture
-							of uppercase and lowercase letters</p>
-						<div class="box__button-container">
-							<button class="box__form-button" type="submit">Join now <i
-									class="box__button-arrow fas fa-arrow-right"></i></button>
-
+						<div class="col-4 centered">
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle text-uppercase filter__drop-down-btn"
+									type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">
+									Size
+								</button>
+								<div class="dropdown-menu filter__drop-down-menu" aria-labelledby="dropdownMenuButton">
+									<input type="checkbox"> XS <br>
+									<input type="checkbox"> S <br>
+									<input type="checkbox"> M <br>
+									<input type="checkbox"> L <br>
+								</div>
+							</div>
 						</div>
-					</fieldset>
-				</form> -->
-				<div class="box__content">
-					<h2 class="box__content-title">loyalty has its perks</h2>
-					<p class="box__content-subtitle">Get in on the loyalty program where you can earn points and unlock
-						serious perks. Starting with
-						these as soon as you join:</p>
-					<div class="box__content-block">
-						<svg class="box__content-img" width="20" height="16" viewBox="0 0 20 16" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
-								fill="black" />
-						</svg>
-						<p class="box__content-text">15% off welcome offer</p>
-					</div>
-					<div class="box__content-block">
-						<svg class="box__content-img" width="20" height="16" viewBox="0 0 20 16" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
-								fill="black" />
-						</svg>
-						<p class="box__content-text">Free shipping, returns and exchanges on all orders</p>
-					</div>
-					<div class="box__content-block">
-						<svg class="box__content-img" width="20" height="16" viewBox="0 0 20 16" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
-								fill="black" />
-						</svg>
-						<p class="box__content-text">$10 off a purchase on your birthday </p>
-					</div>
-					<div class="box__content-block">
-						<svg class="box__content-img" width="20" height="16" viewBox="0 0 20 16" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
-								fill="black" />
-						</svg>
-						<p class="box__content-text">Early access to products</p>
-					</div>
-					<div class="box__content-block">
-						<svg class="box__content-img" width="20" height="16" viewBox="0 0 20 16" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
-								fill="black" />
-						</svg>
-						<p class="box__content-text">Exclusive offers & rewards</p>
+						<div class="col-4 centered">
+							<div class="dropdown">
+								<button class="btn btn-secondary dropdown-toggle text-uppercase filter__drop-down-btn"
+									type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">
+									Price
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+			</section>
+			<section class="grid-product">
+				<ul class="grid-product__list">
+					<li class="grid grid-product__item-1">
+						<img class="grid-product__img" src="./img/product1.jpg" alt="product-1">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring,
+							Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
+					</li>
+					<li class="grid grid-product__item-2">
+						<img class="grid-product__img" src="./img/grid-product2.jpg" alt="product-2">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring,
+							Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
+					</li>
+					<li class="grid grid-product__item-3">
+						<img class="grid-product__img" src="./img/product3.jpg" alt="product-3">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring,
+							Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
+					</li>
+					<li class="grid grid-product__item-4">
+						<img class="grid-product__img" src="./img/product4.jpg" alt="product-4">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring,
+							Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
+					</li>
+					<li class="grid grid-product__item-5">
+						<img class="grid-product__img" src="./img/grid-product5.jpg" alt="product-5">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring,
+							Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
+					</li>
+					<li class="grid grid-product__item-6">
+						<img class="grid-product__img" src="./img/grid-product6.jpg" alt="product-6">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring,
+							Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
+					</li>
+					<li class="grid grid-product__item-7">
+						<img class="grid-product__img" src="./img/grid-product7.jpg" alt="product-7">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring,
+							Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
+					</li>
+					<li class="grid grid-product__item-8">
+						<img class="grid-product__img" src="./img/grid-product8.jpg" alt="product-8">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring,
+							Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
+					</li>
+					<li class="grid grid-product__item-9">
+						<img class="grid-product__img" src="./img/grid-product9.jpg" alt="product-9">
+						<h3 class="products__caption">ellery x m'o capsule</h3>
+						<p class="products__desc"> Known for her sculptural takes on traditional tailoring,
+							Australian
+							arbiter of cool Kym Ellery
+							teams up with Moda Operandi. </p>
+						<p class="products__price"> $52.00 </p>
+					</li>
+				</ul>
+			</section>
+			<section class="num-pages">
+				<h2 class="visually-hidden">Number of pages</h2>
+				<ul class="num-pages__list">
+					<li class="num-pages__item">
+						<button type="button" class="num-pages__button">
+							<img src="./img/arrow-left.svg" alt="arrow-left">
+						</button>
+					</li>
+					<li class="num-pages__item">
+						<a href="#">1</a>
+					</li>
+					<li class="num-pages__item">
+						<a href="#">2</a>
+					</li>
+					<li class="num-pages__item">
+						<a href="#">3</a>
+					</li>
+					<li class="num-pages__item">
+						<a href="#">4</a>
+					</li>
+					<li class="num-pages__item">
+						<a href="#">5</a>
+					</li>
+					<li class="num-pages__item">
+						<a href="#">6</a>
+					</li>
+					<li class="num-pages__item">
+						<a href="#">...</a>
+					</li>
+					<li class="num-pages__item">
+						<a href="#">20</a>
+					</li>
+					<li class="num-pages__item">
+						<button type="button" class="num-pages__button">
+							<img src="./img/arrow-right.svg" alt="arrow-right">
+						</button>
+					</li>
+				</ul>
 			</section>
 		</div>
 	</main>
@@ -262,6 +346,7 @@
 			</ul>
 		</section>
 	</footer>
+	<script src="./js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

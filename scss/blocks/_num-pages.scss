@@ -1,0 +1,28 @@
+.num-pages__list {
+	width: 279px;
+	min-height: 43px;
+	border: 1px solid #EBEBEB;
+	margin: 0 auto 96px;
+
+	display: flex;
+	gap: 17px;
+	align-items: center;
+}
+
+.num-pages__item>a {
+	text-decoration: none;
+	color: #c7c4c4;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+
+	&:hover {
+		color: $dark-pink;
+	}
+}
+
+.num-pages__button {
+	border: none;
+	background-color: transparent;
+}

@@ -20,16 +20,19 @@
 
 .sales__item:first-child {
 	background-image: url(../img/dark.png), url(../img/for_women.png);
+	background-color: $light-pink;
 	background-size: cover;
 }
 
 .sales__item:nth-child(2) {
 	background-image: url(../img/dark.png), url(../img/for_men.png);
+	background-color: $light-pink;
 	background-size: cover;
 }
 
 .sales__item:nth-child(3) {
 	background-image: url(../img/dark.png), url(../img/for-kids.png);
+	background-color: $light-pink;
 	background-size: cover;
 }
 
@@ -37,6 +40,7 @@
 	flex-basis: 1140px;
 	height: 180px;
 	background-image: url(../img/dark.png), url(../img/accesories.png);
+	background-color: $light-pink;
 	background-size: cover;
 }
 
