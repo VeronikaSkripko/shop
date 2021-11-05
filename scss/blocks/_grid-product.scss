@@ -1,0 +1,26 @@
+.grid-product__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	justify-content: center;
+	grid-gap: 30px;
+	margin-bottom: 48px;
+}
+
+.grid-product__img {
+	width: 100%;
+	object-fit: contain;
+}
+
+.grid-product__item-1,
+.grid-product__item-2,
+.grid-product__item-3,
+.grid-product__item-4,
+.grid-product__item-5,
+.grid-product__item-6,
+.grid-product__item-7,
+.grid-product__item-8,
+.grid-product__item-9 {
+	background-color: #F8F8F8;
+	min-height: 420px;
+	max-width: 360px;
+}

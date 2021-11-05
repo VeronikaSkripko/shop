@@ -1,0 +1,58 @@
+.filter {
+	display: flex;
+	margin: 65px 0 65px 0;
+	gap: 320px;
+}
+
+.filter-container {
+	display: flex;
+}
+
+.filter__sign {
+	@include font(14px, 17px, 600);
+	text-transform: uppercase;
+	position: relative;
+	bottom: -23%;
+	left: -5%;
+
+	@include mobile {
+		display: none;
+	}
+}
+
+.filter__img {
+	padding-left: 15%;
+}
+
+.filter__drop-down {
+	width: 44%;
+}
+
+.filter__drop-down-btn {
+	border: none;
+	background-color: transparent;
+	color: #6F6E6E;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $light-pink;
+		color: #6F6E6E;
+	}
+}
+
+.filter__drop-down-menu {
+	min-width: 5rem;
+	padding: 0.5rem 0.5rem;
+}
+
+.filter__drop-down-menu>[type="checkbox"] {
+	margin-bottom: 10%;
+}
+
+.dropdown-toggle::after {
+	display: none;
+}
